@@ -6,18 +6,6 @@ const authMiddleware = require('../Middlewares/AuthMiddleware.js');
 
 router.get('/api/user/:id', authMiddleware, function(req, res){
 
-    // userModel.find(1, (error, result) => {
-    //     console.log('error: ' + error);
-    //     console.log('result: ' + result);
-
-    //     return res.json(
-    //          {
-    //              status:200,
-    //              body:result
-    //          }
-    //     );
-    // });
-
     userService.get(req.params.id, (error, result) => {
         
          console.log('error: ' + error);
