@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <link href="/assets/css/chat.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+    </head>
+    <body>
+        <div class="container h-100">
+            <div class="mt-2 row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h3>Chat 1.0</h3>
+                        </div>
+                        <div class="card-body messages-wrapper">
+                            <div class="messages">
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row">
+                                <div class="col-4 form-group">
+                                    <label>Digite seu nome:</label>
+                                    <div class="input-group">
+                                        <input type="text" class="author form-control">
+                                        <button class="btn-join btn btn-info">Entrar</button>
+                                        <button style="display: none" class="btn-leave btn btn-danger">Sair</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 form-group">
+                                    <label>Enviar para:</label>
+                                    <select class="select-destination form-control">
+                                        <option value="all">Todos</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 form-group">
+                                    <label>Digite sua mensagem:</label>
+                                    <div class="input-group">
+                                        <textarea class="message-content form-control"></textarea>
+                                        <button disabled class="btn-send-message btn btn-info">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="/assets/js/chat.js"></script>
+        <script src="/assets/js/socket.js"></script>
+    </body>
+</html>

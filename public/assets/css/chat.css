@@ -1,0 +1,49 @@
+.messages-wrapper{
+    overflow: auto;
+}
+
+.messages{
+    height: 320px;
+}
+
+.message{
+    border-bottom-color: silver;
+    border-bottom-width: 1px;
+
+    position: relative;
+    width: 300px;
+    padding: 10px;
+    background: #9cced9;
+    border-radius: 0px 10px 10px 10px;
+    margin-bottom: 10px;
+}
+
+.message-from-me{
+    margin-left: auto;
+    background: #b3d99c;
+}
+
+.message p {
+    padding-left: 15px;
+}
+
+.card-header, .card-footer{
+    background: #4d4dcb !important;
+    color: white !important;
+}
+
+button{
+    border-radius: 0px 5px 5px 0px !important;
+}
+
+.private-message{
+    background: #d0d0d0 !important;
+}
+
+.message span{
+    font-size: 8px;
+    float: right;
+    bottom: 10px;
+    position: absolute;
+    right: 10px;
+}
